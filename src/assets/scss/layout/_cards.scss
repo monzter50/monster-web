@@ -1,0 +1,39 @@
+.cards,
+[class^=cards-] {
+ display: grid;
+ align-content: center;
+ grid-template-columns: 1fr;
+ padding: 2em 0;
+ grid-gap:.5em;
+}
+.cards{
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &-skills{
+        @include desktop {
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+        
+    }
+    &-portafolio{
+        &-default{
+            display: grid;
+            @include desktop{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            grid-gap: 1.5em;
+        }
+        display: grid;
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr)
+        }
+         @include desktop{
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 15px;
+         }
+    
+    }
+}

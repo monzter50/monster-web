@@ -1,0 +1,51 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  transition: var(--all-transition);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  padding: 0;
+  position: relative;
+}
+
+h3 {
+  white-space: normal;
+}
+
+footer {
+  margin-top: auto;
+}
+
+i {
+  font-size: 1.5em;
+  margin: 0 .3em;
+}
+
+a {
+  white-space: nowrap;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: .5em 0;
+}
+
+select {
+  outline: 0;
+}

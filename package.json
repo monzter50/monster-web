@@ -1,0 +1,31 @@
+{
+  "name": "portafolio-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./public/*.html",
+    "build": "parcel build ./public/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@vue/babel-preset-app": "^4.2.3",
+    "@vue/component-compiler-utils": "^3.1.1",
+    "sass": "^1.26.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.1.6",
+    "vue-typed-js": "^0.1.2"
+  }
+}
