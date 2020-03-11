@@ -8,7 +8,7 @@ install:
   - npm install -g parcel
 
 script:
-  - npm run deploy
+  - npm run test
   - npm run build
 
 deploy:
