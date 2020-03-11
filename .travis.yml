@@ -4,8 +4,9 @@ node_js:
 
 cache: npm
 install:
-  - npm ci
+  - npm install
   - npm -g parcel
+
 script: npm run build
 
 deploy:
