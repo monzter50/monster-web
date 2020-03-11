@@ -1,4 +1,5 @@
 {
+  "homepage": "https://monzter50.github.io/portafolio",
   "name": "portafolio-parcel",
   "version": "1.0.0",
   "description": "",
@@ -6,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./public/*.html",
-    "build": "parcel build ./public/*.html"
+    "build": "parcel build ./public/*.html",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,8 @@
     "@babel/core": "^7.8.7",
     "@vue/babel-preset-app": "^4.2.3",
     "@vue/component-compiler-utils": "^3.1.1",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.2.0",
     "sass": "^1.26.2",
     "vue-template-compiler": "^2.6.11"
   },
