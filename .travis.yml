@@ -4,6 +4,7 @@ node_js:
 
 cache: npm
 install:
+  - npm ci
   - npm install
   - npm install -g parcel
 
