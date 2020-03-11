@@ -1,15 +1,17 @@
 language: node_js
 node_js:
- - "node"
+  - "node"
 
 cache: npm
-
+install:
+  - npm ci
+  - npm -g parcel
 script: npm run build
 
 deploy:
- provider: pages
- skip_cleanup: true
- github_token: $GITHUB_TOKEN
- local_dir: dist
- on:
-   branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
