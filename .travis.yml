@@ -8,6 +8,11 @@ cache:
     - ~/.npm
 git:
   depth: 3
+  
+install:
+  - npm ci
+  - npm install
+  - npm install -g parcel
 
 script: npm run build
 
